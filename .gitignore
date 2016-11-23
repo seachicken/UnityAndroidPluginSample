@@ -1,12 +1,1 @@
-# Unity
-UnityProject/Library/
-UnityProject/Temp/
-*.sln
-
-# Android Studio
-AndroidPluginFactory/.gradle/
-AndroidPluginFactory/.idea/
-AndroidPluginFactory/build/
-AndroidPluginFactory/local.properties
-AndroidPluginFactory/app/build/
-*.iml
+*.apk
