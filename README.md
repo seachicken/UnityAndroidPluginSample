@@ -1,0 +1,2 @@
+# UnityAndroidPluginSample
+UnityでAndroid拡張を行う為のサンプルプロジェクト
