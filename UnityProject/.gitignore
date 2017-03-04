@@ -1,3 +1,9 @@
+# Unity
 /Library
 /Temp
+/obj
 *.sln
+*.csproj
+
+# VS
+/.vs
