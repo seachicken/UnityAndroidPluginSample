@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sample.androidplugin">
+<!-- 拡張項目は、Assets/Plugins/Android/AndroidManifest.xmlに追加すること -->
+<manifest package="com.example.androidplugin">
 </manifest>

@@ -1,3 +1,4 @@
 <resources>
+    <string name="app_name">AndroidPlugin</string>
     <string name="complete_message">Android拡張成功！</string>
 </resources>
