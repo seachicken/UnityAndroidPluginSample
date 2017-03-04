@@ -1,5 +1,5 @@
 # UnityAndroidPluginSample
-UnityでAndroid拡張を行う為のサンプルプロジェクト
+UnityでAndroidプラグインの開発を効率良く行う為のサンプルプロジェクト
 
 詳細は下記を参照  
-[Qiita: UnityでAndroid拡張を行うベストプラクティス](http://qiita.com/seachicken/items/6fa4eff15fc613650c41)
+[Qiita: UnityでGradleを使ったAndroidプラグイン開発]()
