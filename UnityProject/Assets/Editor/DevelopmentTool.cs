@@ -9,7 +9,7 @@ public class DevelopmentTool
     {
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
 
-        // エクスポートは上書き出力されてゴミが残ってしまう為、事前に古いエクスポートデータをクリアする
+        // エクスポートは上書き出力されてゴミが残ってしまう為、事前に古いエクスポートデータを初期化する
         RunBatch(@"{Application.dataPath}\..\clean_unity_export.bat");
 
         const BuildOptions options = BuildOptions.AcceptExternalModificationsToPlayer
