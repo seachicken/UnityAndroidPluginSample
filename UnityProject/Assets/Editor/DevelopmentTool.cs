@@ -9,6 +9,9 @@ public class DevelopmentTool
     {
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
 
+        // エクスポートは上書き出力されてゴミが残ってしまう為、事前に古いエクスポートデータを初期化する
+        RunBatch(@"{Application.dataPath}\..\clean_unity_export.bat");
+
         const BuildOptions options = BuildOptions.AcceptExternalModificationsToPlayer
                                    | BuildOptions.Development
                                    | BuildOptions.AllowDebugging;
@@ -21,12 +24,17 @@ public class DevelopmentTool
         );
 
         // プラグイン開発プロジェクトへUnityからエクスポートしたデータをコピー
-        var mergeTool = new Process();
-        var info = mergeTool.StartInfo;
-        info.FileName = @"{Application.dataPath}\..\copy_unity_export.bat";
+        RunBatch(@"{Application.dataPath}\..\copy_unity_export.bat");
+    }
+
+    private static void RunBatch(string path)
+    {
+        var process = new Process();
+        var info = process.StartInfo;
+        info.FileName = path;
         info.UseShellExecute = false;
-        mergeTool.Start();
-        mergeTool.WaitForExit();
-        mergeTool.Close();
+        process.Start();
+        process.WaitForExit();
+        process.Close();
     }
 }
