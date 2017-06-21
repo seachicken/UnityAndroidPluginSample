@@ -8,6 +8,7 @@ public class DevelopmentTool
     public static void SyncAndroidStudio()
     {
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
+        EditorUserBuildSettings.androidBuildSystem = AndroidBuildSystem.Gradle;
 
         // エクスポートは上書き出力されてゴミが残ってしまう為、事前に古いエクスポートデータを初期化する
         RunBatch(@"{Application.dataPath}\..\clean_unity_export.bat");
